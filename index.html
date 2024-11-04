@@ -30,6 +30,201 @@
   <a target="_blank" style="text-decoration:none;color:#226e93;" href="https://youtube.com/@vectolino3877?si=OMtDc8IFNHlZPvm1"><p>Canal de Youtube</p></a>
 </div>
 
+<style>
+.banner {
+            width: 100%;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            max-height: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .banner a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .banner img {
+            width: 24px;
+            height: 24px;
+        }
+body {
+    background: #FFFFFF;
+    color: black;
+    font-family: "Montserrat";
+}
+h1{
+    font-family:"Fredoka";
+    color:#226e93;
+}
+#gamepads>* {
+    background: #FFF;
+    padding: 1em;
+    margin: 10px 5px 0 0;
+}
+#gamepads pre {
+    white-space: pre-wrap;
+}
+
+.head {
+  display: flex;
+}
+.head .id {
+  flex: 1 1 auto;
+}
+.head .index,
+.head .id {
+  display: inline-block;
+  background: #FFF;
+  padding: 0.5em;
+}
+.head .index {
+}
+
+.info .label {
+  width: 7em;
+  display: flex;
+  flex-direction:row;
+}
+
+.info{
+    display:flex;
+    flex-direction:row;
+    margin:2px;
+    border-radius:10px;
+    max-width:25rem;
+    padding:5px;
+    background:#229331ee;
+    color: white;
+}
+.infos{
+    display:flex;
+    flex-direction:row;
+}
+
+.inputs {
+  display: flex;
+  align-items:flex-start;
+  margin-top: 10px;
+}
+.axes {
+  display: flex;
+  align-items: flex-start;
+
+}
+.axes-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg text {
+  color: #000;
+  font-family: monospace;
+}
+
+.axes svg text {
+    margin-top:1rem;
+    font-size: 0.6px;
+}
+.buttons svg text {
+  font-size: 1.2px;
+}
+.axes>div, .buttons>div {
+  display: inline-block;
+  background: #FFFFFF;
+}
+.axes>div {
+  margin: 2px 5px 0 0;
+}
+.buttons>div {
+  margin: 2px 2px 0 0;
+}
+
+.vib-button{
+  border:none;
+  border-radius:10px;
+
+}
+.vib-button:hover{
+  background:white;
+  color:#226e93;
+}
+
+.buttons{
+
+}
+
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin: 0 10px; /* Espacio entre etiquetas */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px; /* Bordes redondeados */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%; /* Círculo */
+}
+
+/* Cambiar el color del fondo cuando el switch está activado */
+input:checked + .slider {
+    background-color: #2196F3; /* Color azul cuando está activado */
+}
+
+/* Mover el círculo al activar el switch */
+input:checked + .slider:before {
+    transform: translateX(26px); /* Desplazar el círculo a la derecha */
+}
+
+* {
+    user-select: none;
+  }
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+    
 <script type="text/javascript">
 
 
