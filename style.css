@@ -94,3 +94,123 @@ svg {
   stroke-opacity: 1;
     max-width: 100%; /* Asegura que el SVG no exceda el ancho de su contenedor */
     height: auto; /* Mantiene la relación de aspecto */
+  }
+#gamepads>* {
+    background: #FFF;
+    padding: 1em;
+    margin: 10px 5px 0 0;
+}
+#gamepads pre {
+    white-space: pre-wrap;
+}
+
+.head {
+  display: flex;
+}
+.head .id {
+  flex: 1 1 auto;
+}
+.head .index,
+.head .id {
+  display: inline-block;
+  background: #FFF;
+  padding: 0.5em;
+}
+.head .index {
+}
+
+.info .label {
+  width: 7em;
+  display: flex;
+  flex-direction:row;
+}
+
+.info{
+    display:flex;
+    flex-direction:row;
+    margin:2px;
+    border-radius:10px;
+    max-width:25rem;
+    padding:5px;
+    background:#229331ee;
+    color: white;
+}
+.infos{
+    display:flex;
+    flex-direction:row;
+}
+
+.inputs {
+  display: flex;
+  align-items:flex-start;
+  margin-top: 10px;
+}
+.axes {
+  display: flex;
+  align-items: flex-start;
+
+}
+.axes-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg text {
+  color: #000;
+  font-family: monospace;
+}
+
+.axes svg text {
+    margin-top:1rem;
+    font-size: 0.6px;
+}
+.buttons svg text {
+  font-size: 1.2px;
+}
+.axes>div, .buttons>div {
+  display: inline-block;
+  background: #FFFFFF;
+}
+.axes>div {
+  margin: 2px 5px 0 0;
+}
+.buttons>div {
+  margin: 2px 2px 0 0;
+}
+
+.vib-button{
+  border:none;
+  border-radius:10px;
+
+}
+.vib-button:hover{
+  background:white;
+  color:#226e93;
+}
+
+.buttons{
+
+}
+
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    margin: 0 10px; /* Espacio entre etiquetas */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
