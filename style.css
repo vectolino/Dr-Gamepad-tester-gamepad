@@ -1,3 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+header {
+  background-color: #226e93;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.status {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#gamepads {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube-logo {
+  max-width: 6rem;
+  margin: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #226e93;
+}
+
+a:hover {
+  color: #005f73;
+}
+
 #Xbox {
   float: right;
   width: 30%; /* Ajusta el ancho según sea necesario */
