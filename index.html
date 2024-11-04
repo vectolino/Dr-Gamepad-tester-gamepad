@@ -188,14 +188,14 @@ function addGamepadIfNew(gamepad) {
 
 function handleConnect(e) {
   console.log('connect');
-  document.getElementById("conectar").innerHTML = "¿Tips? verifica que todos los botones se pongan de color negro cuando los presiones y asegurate de que los joysticks estén en el centro si no los estás tocando";
+  document.getElementById("conectar").innerHTML = "Por favor, revisa que todos los botones de tu control funcionen, así como la circularidad y movimiento normal de tus joysticks";
   addGamepadIfNew(e.gamepad);
 
 }
 
 function handleDisconnect(e) {
   console.log('disconnect');
-  document.getElementById("conectar").innerHTML = "Conecta un gamepad y presiona sus botones para que aparezca en pantalla";
+  document.getElementById("conectar").innerHTML = "¡Conecta tu control, presiona cualquier botón y comienza a testearlo!";
   removeGamepad(e.gamepad);
 }
 
