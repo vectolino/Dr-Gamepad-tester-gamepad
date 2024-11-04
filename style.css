@@ -95,7 +95,41 @@ svg {
     max-width: 100%; /* Asegura que el SVG no exceda el ancho de su contenedor */
     height: auto; /* Mantiene la relación de aspecto */
 
-.buttons{
+
+.svg text {
+  color: #000;
+  font-family: monospace;
+}
+
+.axes svg text {
+    margin-top:1rem;
+    font-size: 0.6px;
+}
+  
+.buttons svg text {
+  font-size: 1.2px;
+}
+.axes>div, .buttons>div {
+  display: inline-block;
+  background: #FFFFFF;
+}
+.axes>div {
+  margin: 2px 5px 0 0;
+}
+.buttons>div {
+  margin: 2px 2px 0 0;
+}
+
+.vib-button{
+  border:none;
+  border-radius:10px;
+
+}
+.vib-button:hover{
+  background:white;
+  color:#226e93;
+}
+  .buttons{
 
 }
 
