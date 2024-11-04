@@ -1,76 +1,67 @@
-@@ -1,103 +1,12 @@
 /* General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-    display: flex;
-    justify-content: flex-end; /* Mueve el contenido hacia la derecha */
-    align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
-    margin: 0; /* Elimina márgenes por defecto */
-}
-  }
-#gamepads>* {
-    background: #FFF;
-    padding: 1em;
-    margin: 10px 5px 0 0;
-}
-#gamepads pre {
-    white-space: pre-wrap;
+  display: flex;
+  justify-content: center; /* Centra el contenedor principal horizontalmente */
+  align-items: center; /* Centra el contenedor principal verticalmente */
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
 }
 
-.head {
+#container {
   display: flex;
+  justify-content: space-between; /* Distribuye los elementos del container */
+  width: 90%; /* Ajusta el ancho del contenedor */
 }
-.head .id {
-  flex: 1 1 auto;
-}
-.head .index,
-.head .id {
-  display: inline-block;
+
+/* Gamepads - Posición a la derecha */
+#gamepads {
   background: #FFF;
-  padding: 0.5em;
-}
-.head .index {
+  padding: 1em;
+  margin-left: auto; /* Empuja a la derecha */
 }
 
-.info .label {
-  width: 7em;
+#gamepads > * {
+  background: #FFF;
+  padding: 1em;
+  margin: 10px 5px 0 0;
+}
+
+/* Axes debajo de Gamepad */
+.axes-container {
   display: flex;
-  flex-direction:row;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Añade espacio entre el gamepad y los ejes */
 }
 
-.info{
-    display:flex;
-    flex-direction:row;
-    margin:2px;
-    border-radius:10px;
-    max-width:25rem;
-    padding:5px;
-    background:#229331ee;
-    color: white;
+/* Buttons - 4 hileras a la izquierda */
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna para apilar los botones verticalmente */
+  grid-template-rows: repeat(4, auto); /* Cuatro hileras */
+  gap: 10px; /* Espacio entre los botones */
+  margin-right: auto; /* Posiciona a la izquierda */
 }
-.infos{
-    display:flex;
-    flex-direction:row;
+
+/* Estilos adicionales */
+.info {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+  border-radius: 10px;
+  max-width: 25rem;
+  padding: 5px;
+  background: #229331ee;
+  color: white;
 }
 
 .inputs {
   display: flex;
-  align-items:flex-start;
-  margin-top: 10px;
-}
-.axes {
-  display: flex;
   align-items: flex-start;
-
-}
-.axes-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 10px;
 }
 
 .svg text {
@@ -79,55 +70,41 @@ body {
 }
 
 .axes svg text {
-    margin-top:1rem;
-    font-size: 0.6px;
+  margin-top: 1rem;
+  font-size: 0.6px;
 }
+
 .buttons svg text {
   font-size: 1.2px;
 }
-.axes>div, .buttons>div {
-  display: inline-block;
-  background: #FFFFFF;
-}
-.axes>div {
-  margin: 2px 5px 0 0;
-}
-.buttons>div {
-  margin: 2px 2px 0 0;
+
+.vib-button {
+  border: none;
+  border-radius: 10px;
 }
 
-.vib-button{
-  border:none;
-  border-radius:10px;
-
+.vib-button:hover {
+  background: white;
+  color: #226e93;
 }
-.vib-button:hover{
-  background:white;
-  color:#226e93;
-}
-
-.buttons{
-
-}
-
 
 .switch-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    margin: 0 10px; /* Espacio entre etiquetas */
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  margin: 0 10px;
 }
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
