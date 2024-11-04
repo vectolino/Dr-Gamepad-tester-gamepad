@@ -212,6 +212,8 @@ const fudgeFactor = 2;
 const runningElem = document.querySelector('#running');
 const gamepadsElem = document.querySelector('#gamepads');
 const gamepadsByIndex = {};
+const controllerF = "R2FtZXBhZCBUZXN0ZXIgV0VCIHBvciBFbCBUYWxsZXIgZGUgQWxleA=="
+const controllerT = "KEMpIDIwMjQgRWwgVGFsbGVyIGRlIEFsZXg="
 
 const controllerTemplate = `
 <div>
@@ -222,6 +224,7 @@ const controllerTemplate = `
     <div style="background:#6e2293;" class="info"><span class="vib"></span></div>
     <div style="background:#935722de;" class="info"><div class="label">Vibración:</div><span class="vibration"></span></div>
     <div id="test-vib" style="background:#226e23;" class="info"><div class="label">Vibrar</div><span class="test-v"><button class="vib-button" id="v-izq" onclick="vibrateMotor('left')">IZQ</button> <button class="vib-button" id="v-der" onclick="vibrateMotor('right')">DER</button></span></div>
+    <div id="test-vibG" style="background:#226e23;" class="info"><div class="label">Vibrar Gatillos</div><span class="test-v"><button class="vib-button" id="v-izqG" onclick="vibrateMotorG('left')">IZQ</button> <button class="vib-button" id="v-derG" onclick="vibrateMotorG('right')">DER</button></span></div>
     <div style="background:#226e93;" class="info"><div class="label">Timestamp:</div><span class="timestamp"></span></div>
     </div>
 
