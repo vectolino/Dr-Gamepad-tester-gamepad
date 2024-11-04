@@ -54,22 +54,3 @@ a {
 a:hover {
   color: #005f73;
 }
-
-#Xbox {
-  float: right;
-  width: 30%; /* Ajusta el ancho según sea necesario */
-  margin-left: 20px; /* Espacio entre Xbox y elementos a la izquierda */
-}
-
-.Axis {
-  clear: right; /* Asegura que estén debajo del elemento #Xbox */
-  display: block;
-  margin-top: 10px; /* Espacio entre elementos Axis */
-}
-
-.Buttons {
-  float: left;
-  width: 22%; /* Ajusta para que quepan cuatro en una fila */
-  margin: 5px; /* Espacio entre botones */
-  box-sizing: border-box; /* Para que el margen no afecte el tamaño */
-}
