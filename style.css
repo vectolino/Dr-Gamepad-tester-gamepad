@@ -95,7 +95,29 @@ svg {
     max-width: 100%; /* Asegura que el SVG no exceda el ancho de su contenedor */
     height: auto; /* Mantiene la relación de aspecto */
 
+.info{
+    display:flex;
+    flex-direction:row;
+    margin:2px;
+    border-radius:10px;
+    max-width:25rem;
+    padding:5px;
+    background:#229331ee;
+    color: white;
+}
+.infos{
+    display:flex;
+    flex-direction:row;
+}
 
+.inputs {
+  display: flex;
+  align-items:flex-start;
+  margin-top: 10px;
+}
+.axes {
+  display: flex;
+  align-items: flex-start;
 .svg text {
   color: #000;
   font-family: monospace;
