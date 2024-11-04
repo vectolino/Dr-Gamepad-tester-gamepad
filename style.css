@@ -4,35 +4,82 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
-}
-
-.center {
-  text-align: center;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
   background-color: #226e93;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 2rem 0;
 }
 
 .status {
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  flex-basis: 100%;
 }
 
 #gamepads {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.gamepad {
+  background-color: #d9d9d9;
   padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.joysticks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.joystick {
+  width: 80px;
+  height: 80px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 2rem;
+  flex: 1;
+}
+
+.button {
+  background-color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
   text-align: center;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .support {
